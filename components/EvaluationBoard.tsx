@@ -80,7 +80,7 @@ export function EvaluationBoard({ currentUser, unitLogoUrl }: EvaluationBoardPro
   
   // Pagination State (quebra de página de registros)
   const [currentPage, setCurrentPage] = useState(1);
-  const [pageSize, setPageSize] = useState(24);
+  const [pageSize, setPageSize] = useState(12);
 
   useEffect(() => {
     setCurrentPage(1);
