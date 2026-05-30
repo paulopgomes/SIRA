@@ -1464,16 +1464,16 @@ export function CustomReports({ currentUser }: CustomReportsProps) {
                   </div>
                 </div>
 
-                <div className="p-6 rounded-[1.5rem] bg-indigo-50/50 border border-[#e8bcb7]/15 flex items-center justify-between shadow-sm">
+                <div className="p-6 rounded-[1.5rem] bg-[#ed1c24]/5 border border-[#e8bcb7]/20 flex items-center justify-between shadow-sm">
                   <div className="space-y-1 flex-1">
                     <p className="text-[10px] font-black uppercase tracking-widest text-[#5e3f3b] opacity-60">Frequência Média de Risco</p>
-                    <h3 className="text-3xl font-black text-indigo-600 font-sans">
+                    <h3 className="text-3xl font-black text-[#ed1c24] font-sans">
                       {laPatients.length > 0 
                         ? Math.round(laPatients.reduce((acc, curr) => acc + curr.frequency, 0) / laPatients.length)
                         : 0}%
                     </h3>
                   </div>
-                  <div className="w-12 h-12 rounded-2xl bg-indigo-100 flex items-center justify-center text-indigo-600 shrink-0 shadow-sm">
+                  <div className="w-12 h-12 rounded-2xl bg-[#ed1c24]/10 flex items-center justify-center text-[#ed1c24] shrink-0 shadow-sm">
                     <TrendingUp size={24} />
                   </div>
                 </div>
@@ -1529,7 +1529,7 @@ export function CustomReports({ currentUser }: CustomReportsProps) {
                             <td className="py-4 px-6 text-xs text-[#5e3f3b] font-semibold max-w-[200px] truncate" title={p.projectName}>
                               {p.projectName}
                             </td>
-                            <td className="py-4 px-6 text-xs text-indigo-500 font-bold select-none">{p.turma}</td>
+                            <td className="py-4 px-6 text-xs text-[#5e3f3b] font-bold select-none">{p.turma}</td>
                             <td className="py-4 px-6 text-xs font-black text-center text-rose-600">{p.absences}</td>
                             <td className="py-4 px-6 text-xs font-semibold text-center text-slate-700">{p.latestDateStr}</td>
                             <td className="py-4 px-6 text-xs font-semibold text-center">

@@ -52,8 +52,8 @@ export function ProjectKPICards({ metrics }: ProjectKPICardsProps) {
       value: metrics.monthlyAverage.toFixed(1),
       subValue: 'Atendimentos/mês',
       icon: TrendingUp,
-      color: 'text-blue-600',
-      bg: 'bg-blue-50 border-blue-100'
+      color: 'text-[#5e3f3b]',
+      bg: 'bg-[#e8bcb7]/20 border-[#e8bcb7]/45'
     },
     {
       label: 'Dias Restantes',

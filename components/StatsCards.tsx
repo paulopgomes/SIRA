@@ -43,8 +43,8 @@ export function StatsCards({ data, currentUser, filters }: StatsCardsProps) {
       label: 'Total de Usuários',
       value: totalPatients.toString(),
       icon: Users,
-      color: 'bg-[#d0e4ff]',
-      iconColor: 'text-[#004a7a]',
+      color: 'bg-[#e8bcb7]/25',
+      iconColor: 'text-[#5e3f3b]',
     },
     {
       label: 'Atendimentos Realizados',
